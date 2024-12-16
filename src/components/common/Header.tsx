@@ -23,6 +23,8 @@ const Header = () => {
       <section className="flex-row gap-20 flex text-xl">
         <NavLink to={"/dashboard"}>Home</NavLink>
         <NavLink to={"/history"}>History</NavLink>
+        <NavLink to={"/profile"}>Profile</NavLink>
+
         {token ? (
           <button
             className="flex-row flex items-center gap-2 text-red-400"

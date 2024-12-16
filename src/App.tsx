@@ -14,6 +14,7 @@ import { RecipeDetails } from "./pages/RecipeHistoryScreen/RecipeDetails";
 import AuthenticationScreen from "./pages/authentication/AuthenticationScreen";
 import { getToken } from "./utils/util";
 import { DashBoardScreen } from "./pages/DashBoardScreen";
+import ProfileScreen from "./pages/ProfileScreen";
 
 function App() {
   let persistor = persistStore(store);
@@ -37,6 +38,7 @@ function App() {
                 <Route path="recipes" element={<RecipeList />} />
                 <Route path="details/:id" element={<RecipeDetails />} />
               </Route>
+              <Route path="profile" element={<ProfileScreen />} />
             </Routes>
           </div>
         </div>

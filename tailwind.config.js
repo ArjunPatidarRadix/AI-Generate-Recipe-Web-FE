@@ -9,6 +9,7 @@ module.exports = {
         backgroundColor: "var(--backgroundColor)",
         textColor: "var(--textColor)",
         whiteColor: "var(--whiteColor)",
+        primaryColorFaded: "var(--primaryColorFaded)",
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],

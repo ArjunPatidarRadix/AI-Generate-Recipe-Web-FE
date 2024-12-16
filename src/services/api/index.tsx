@@ -33,6 +33,14 @@ class Api {
     });
   };
 
+  getProfile = async (): Promise<IResponse<IUserResponse>> => {
+    return await this.request.send({
+      endpoint: ENDPOINTS.myProfile,
+      method: "get",
+      body: null,
+    });
+  };
+
   identifyFoodAndGenerateRecipe = async (
     formData: FormData
   ): Promise<IRecipeData> => {

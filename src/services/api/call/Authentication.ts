@@ -34,3 +34,16 @@ export const callLogin = async (
     return error;
   }
 };
+
+export const callGetProfile = async (): Promise<IUserResponse> => {
+  try {
+    Request.Instance.setLoader(true);
+    const output = await api.getProfile();
+    Request.Instance.setLoader(false);
+
+    return output.data;
+  } catch (error: any) {
+    logError(error);
+    return error;
+  }
+};

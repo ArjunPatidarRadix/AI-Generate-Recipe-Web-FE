@@ -17,6 +17,7 @@ export const ENDPOINTS = {
   getRecipe: "recipe",
   signup: "user/signup",
   login: "user/login",
+  myProfile: "user/myProfile",
 };
 
 export const DEFAULT = "default";
