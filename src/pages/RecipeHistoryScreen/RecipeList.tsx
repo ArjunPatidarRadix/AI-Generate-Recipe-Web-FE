@@ -30,9 +30,9 @@ const RecipeList = () => {
             onClick={() => onRecipeClickHandler(data?._id)}
           >
             <img
-              className="w-24 h-24 rounded-full"
+              className="w-28 h-28 rounded-full border-2"
               src={`${IMAGE_BASE_URL}${data.imagePath}`}
-              alt="Rounded avatar"
+              alt="Food"
             />
             <p className="text-xl text-textColor font-medium">
               {data.recipeName}
